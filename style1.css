@@ -1,0 +1,153 @@
+/* Atur styling umum untuk halaman */
+body {
+    font-family: Arial, sans-serif;
+    background-image: url(bg.jpeg);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Styling untuk form */
+.containerform {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    position: absolute;
+    top: 125px;
+    left: 7.5rem;
+    width: 100%;
+    max-width: 500px;
+    height: 100%;
+    max-height: 250px;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+
+.form-label {
+    font-weight: bold;
+    margin-bottom: 10px;
+    display: block;
+    color: #555;
+}
+
+.mb-3 {
+    margin-bottom: 10px;
+}
+
+.form-control {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #bfbfbf;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin-top: 5px;
+    background-color: #e5e5e5;
+}
+
+.form-control:focus {
+    border-color: #000000;
+    outline: none;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+}
+
+.btn {
+    margin-top: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    background-color: #2971bd;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%; 
+}
+.btnshow{
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    background-color: #2971bd;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;  
+}
+.btnshow:hover{
+    background-color: #003f83;
+}
+.btn:hover {
+    background-color: #003f83;
+}
+
+/* Styling untuk gambar */
+.container img {
+    max-width: 27%;
+    height: auto;
+    border-radius: 2px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    position: absolute;
+    right: 8%;
+    top: 1%;
+}
+
+html, body {
+    /* Overflow hidden bisa diganti jika konten mungkin lebih besar dari layar */
+    overflow-x: hidden; /* Hanya menyembunyikan scroll horizontal */
+}
+
+/* Styling untuk container lingkaran */
+.lingkaran-container {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    left: 7.5rem;
+    top: 100px;
+}
+
+
+/* Styling untuk lingkaran */
+.lingkaran {
+    width: 13px;
+    height: 13px;
+    background-color: #007bff; /* Warna biru */
+    border-radius: 50%; /* Membuatnya menjadi lingkaran */
+    margin: 2.5px; /* Jarak antar lingkaran */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Tambah bayangan */
+}
+
+/* Jika ingin variasi warna pada setiap lingkaran */
+.lingkaran:nth-child(1) {
+    background-color:#32cd32 ; /* Warna merah */
+}
+.lingkaran:nth-child(2) {
+    background-color: #ffd700; /* Warna hijau */
+}
+.lingkaran:nth-child(3) {
+    background-color:#ff6347 ; /* Warna kuning */
+}
+.lingkaran:nth-child(4) {
+    background-color: #4650ff; /* Warna kuning */
+}

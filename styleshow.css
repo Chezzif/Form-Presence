@@ -1,0 +1,96 @@
+body {
+    background-image: url(bg.jpeg);
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0; /* Menghilangkan margin default */
+}
+
+.container {
+    margin: 0;
+    width: 100%;
+    max-width: 700px;
+    padding: 20px;
+}
+
+.tabelscrol {
+    overflow-y: auto; /* Mengizinkan scroll vertikal */
+    max-height: 380px; /* Tinggi maksimum kontainer tabel */
+    border: 1px solid #bfbfbf; /* Border pada tabel scroll */
+    position: relative; /* Posisi relatif untuk elemen di dalamnya */
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
+}
+
+.tabelscrol::-webkit-scrollbar {
+    width: 0; /* Menyembunyikan scrollbar */
+    background: transparent; /* Latar belakang transparan */
+    
+    
+}
+
+table {
+    border-collapse: collapse; /* Menghilangkan jarak antara border sel */
+    width: 100%; /* Lebar tabel 100% */
+    background-color: #fff; /* Warna latar belakang tabel */
+    table-layout: auto; /* Mengatur layout otomatis */
+    margin: 0;
+} 
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+tr{
+    scroll-snap-align: start;
+    margin: 0;
+    padding: 0;
+}
+
+th, td {
+    border: 1px solid #bfbfbf; /* Border pada sel */
+    padding: 10px; /* Ruang di dalam sel */
+    margin: 0;
+    text-align: center; /* Rata tengah untuk teks */
+}
+
+th {
+    position: sticky; /* Membuat header tetap saat scroll */
+    top: 0; /* Posisi atas untuk sticky */
+    z-index: 1; /* Agar th tetap di atas td */
+    font-weight: bold; /* Membuat teks tebal */
+    color: #333; /* Warna teks */
+    background: #e5e5e5; /* Warna latar belakang untuk header */
+    margin: 0;
+}
+
+td {
+    color: #555; /* Warna teks untuk sel */
+}
+
+tr:nth-child(even) {
+    background-color: #e5e5e5; /* Warna latar untuk baris genap */
+}
+
+.btn {
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    background-color: #2971bd; /* Warna tombol */
+    color: #fff; /* Warna teks tombol */
+    padding: 10px 20px; /* Ruang dalam tombol */
+    font-size: 16px; /* Ukuran font tombol */
+    border: none; /* Menghilangkan border */
+    border-radius: 5px; /* Sudut melengkung pada tombol */
+    cursor: pointer; /* Menampilkan kursor pointer saat hover */
+    width: 100%; /* Lebar tombol 100% */
+    margin-top: 1rem; /* Jarak atas tombol */
+}
+
+.img1 {
+    max-width: 27%;
+    height: auto;
+    border-radius: 2px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    position: absolute;
+    right: 8%;
+    top: 1%;
+}
